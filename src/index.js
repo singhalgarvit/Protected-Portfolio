@@ -5,6 +5,8 @@ const hbs = require("hbs");
 const bcrypt=require("bcrypt");
 const collection = require("./mongodb");
 
+// this is a sample comment for git repo........
+
 const tempelatePath = path.join(__dirname, "../tempelates");
 app.use(express.static("public"));
 
