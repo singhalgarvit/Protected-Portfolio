@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+</head>
+<body>
+    <center>
+   <table border="3" style="padding: 5px;">
+    <tr>
+        <th>Name</th>
+        <th>username</th>
+        <th>Password</th>
+    </tr>
+    {{#each items}}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{username}}</td>
+        <td>{{password}}</td>
+    </tr>
+    {{/each}}
+   </table>
+   </center>
+</body>
+</html>

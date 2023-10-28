@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="/main.js"></script>
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <h1>Login</h1>
+        <form action="/login" method="post">
+          <input
+            type="email"
+            name="username"
+            id="username"
+            placeholder="Your Email"
+            required
+          /><br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password" 
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required
+          />
+          <i class="fa fa-eye" onclick="show()" id="eye"></i><br />
+          <input type="submit" value="Login" />
+        </form><br />
+        <div style="color: black;">Don't Have an account
+          <a href="signup" style="text-decoration: none;">Create One</a></div>
+      </div>
+    </center>
+  </body>
+</html>
